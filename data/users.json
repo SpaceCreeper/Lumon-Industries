@@ -1,0 +1,23 @@
+[
+    {
+        "username": "harmonyCobel",
+        "fullname": "Harmony Cobel",
+        "password": "praisekier",
+        "role": "Head of the Severed Floor",
+        "gender": "F"
+    },
+    {
+        "username": "sethMilchick",
+        "fullname": "Seth Milchick",
+        "password": "ItsNotMilkshake!",
+        "role": "Supervisor of the Severed Floor",
+        "gender": "M"
+    },
+    {
+        "username": "username",
+        "fullname": "User de User",
+        "password": "password",
+        "role": "Test User",
+        "gender": "M"
+    }
+]

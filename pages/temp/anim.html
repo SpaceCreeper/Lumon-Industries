@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Severance CRT Terminal with Delay</title>
+<style>
+  @font-face {
+    font-family: "Manifold Extended CF";
+    src: url(fonts/manifold-extended-cf/ManifoldExtendedCF-Bold.woff2);
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #0e1a26;
+    color: #79a6b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manifold Extended CF", monospace;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    overflow: hidden;
+  }
+
+  /* CRT scanlines overlay */
+  body::before {
+    content: "";
+    position: absolute;
+    top:0; left:0; width:100%; height:100%;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(121,166,185,0.05),
+      rgba(121,166,185,0.05) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    z-index: 2;
+  }
+
+  .line {
+    display: flex;
+    font-size: 6rem;
+    white-space: nowrap;
+    text-shadow: 0 0 3px #79a6b9, 0 0 7px #79a6b9;
+    position: relative;
+    z-index: 1;
+    /* flicker removed */
+  }
+
+  .char {
+    display: inline-block;
+    transform: translateX(120vw); /* start off-screen right */
+    animation: slide 8s ease-in-out infinite;
+  }
+
+  .char.space {
+    width: 0.2em; /* fixed width for spaces */
+  }
+
+  @keyframes slide {
+    0%   { transform: translateX(120vw); }
+    25%  { transform: translateX(0); }   /* arrive at center */
+    55%  { transform: translateX(0); }   /* hold in center */
+    100% { transform: translateX(-120vw); } /* exit left */
+  }
+</style>
+</head>
+<body>
+  <div class="line" id="line"></div>
+
+  <script>
+    const text = "Hello Ms. Cobel";
+    const line = document.getElementById("line");
+
+    [...text].forEach((ch, i) => {
+      const span = document.createElement("span");
+      span.textContent = ch;
+      span.className = "char";
+      if (ch === " ") span.classList.add("space");
+      // staggered delay: H comes first, then e, l, l, o...
+      span.style.animationDelay = `${i * 0.15}s`;
+      line.appendChild(span);
+    });
+  </script>
+</body>
+</html>
