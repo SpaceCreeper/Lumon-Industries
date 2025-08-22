@@ -306,7 +306,8 @@ article
 
 .article-body
 {
-    font-size: medium;
-    margin-top: 12px;
+    font-size: larger;
+    
     line-height: 1.25em;
+    margin-top: 12px;
 }
