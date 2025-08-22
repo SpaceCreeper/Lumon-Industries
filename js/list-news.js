@@ -2,7 +2,7 @@ async function loadNews()
 {
     try
     {
-        const response = await fetch("../data/news.json");
+        const response = await fetch("/data/news.json");
         return await response.json();
     }
     catch (error)
