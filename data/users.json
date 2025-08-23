@@ -2,7 +2,7 @@
     {
         "username": "harmonyCobel",
         "fullname": "Harmony Cobel",
-        "password": "praisekier",
+        "password": "secretlySelvig",
         "role": "Head of the Severed Floor",
         "gender": "F"
     },
@@ -12,6 +12,20 @@
         "password": "ItsNotMilkshake!",
         "role": "Supervisor of the Severed Floor",
         "gender": "M"
+    },
+    {
+        "username": "natalieKalen",
+        "fullname": "Natalie Kalen",
+        "password": "nattyisthebaddie",
+        "role": "Board Liason Officer",
+        "gender": "F"
+    },
+    {
+        "username": "helenaEagan",
+        "fullname": "Helena Eagan",
+        "password": "hellyrhellywho?",
+        "role": "Chief Operating Officer",
+        "gender": "F"
     },
     {
         "username": "username",

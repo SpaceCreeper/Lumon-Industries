@@ -2,7 +2,7 @@ async function loadNews()
 {
     try
     {
-        const response = await fetch("../data/news.json");
+        const response = await fetch("/data/news.json");
         return await response.json();
     }
     catch (error)
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async function(event) {
         li.className = "news-item"
         li.innerHTML = `
             <p class="news-type">${newsArticle.type.toUpperCase()}</p>
-            <a href="${newsArticle.link}" class="news-headline">${newsArticle.headline}</a>
+            <a href="/pages/news/article.html?slug=${newsArticle.slug}" class="news-headline">${newsArticle.headline}</a>
             <p class="news-date">${newsArticle.date}</p>
         `;
         ul.append(li);
