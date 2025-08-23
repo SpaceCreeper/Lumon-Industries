@@ -3,30 +3,30 @@
         "headline": "Lorem Ipsum Strikes Again (It's Just A Template)",
         "date": "August 2025",
         "type": "Anytype",
-        "link": "/news/template.html"
+        "link": "news/template.html"
     },
     {
         "headline": "Reforms on the Severed Floor For A Better Workplace, for the Severed Employees",
         "date": "May 2022",
         "type": "Press Release",
-        "link": "/pages/newsroom.html"
+        "link": "pages/newsroom.html"
     },
     {
         "headline": "Response on Remarks Made During Recent Severance Celebration Event",
         "date": "April 2022",
         "type": "Statement",
-        "link": "/news/response-to-remarks-during-severance-event.html"
+        "link": "news/response-to-remarks-during-severance-event.html"
     },
     {
         "headline": "Lumon Announces Upcoming Lineup of Biotech Diagnosis Products For Hospitals",
         "date": "March 2022",
         "type": "Announcement",
-        "link": "/pages/newsroom.html"
+        "link": "pages/newsroom.html"
     },
     {
         "headline": "\"A Severed Story\": Celebrate Success on the Severance Program",
         "date": "March 2022",
         "type": "Announcement",
-        "link": "/pages/newsroom.html"
+        "link": "pages/newsroom.html"
     }
 ]
