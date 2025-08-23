@@ -9,7 +9,7 @@
         "headline": "Reforms on the Severed Floor For A Better Workplace, for the Severed Employees",
         "date": "May 2022",
         "type": "Press Release",
-        "link": "pages/newsroom.html"
+        "link": "../pages/newsroom.html"
     },
     {
         "headline": "Response on Remarks Made During Recent Severance Celebration Event",
@@ -21,12 +21,12 @@
         "headline": "Lumon Announces Upcoming Lineup of Biotech Diagnosis Products For Hospitals",
         "date": "March 2022",
         "type": "Announcement",
-        "link": "pages/newsroom.html"
+        "link": "../pages/newsroom.html"
     },
     {
         "headline": "\"A Severed Story\": Celebrate Success on the Severance Program",
         "date": "March 2022",
         "type": "Announcement",
-        "link": "pages/newsroom.html"
+        "link": "../pages/newsroom.html"
     }
 ]
